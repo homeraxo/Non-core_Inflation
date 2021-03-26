@@ -10,6 +10,7 @@ namespace Non_core_Inflation.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 
