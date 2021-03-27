@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Non-core_Inflation", "Non-c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Non-core_Inflation.Tests", "Non-core_Inflation.Tests\Non-core_Inflation.Tests.csproj", "{90811C24-74B3-47CB-B908-5F43D3928783}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI_Inflation", "WebAPI_Inflation\WebAPI_Inflation.csproj", "{D7F60DF9-642C-40AF-A39E-D8B342CC3B89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI_Inflation.Tests", "WebAPI_Inflation.Tests\WebAPI_Inflation.Tests.csproj", "{D05A81B7-E5EB-4D94-B85A-0EEAFECF8FBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{90811C24-74B3-47CB-B908-5F43D3928783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90811C24-74B3-47CB-B908-5F43D3928783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90811C24-74B3-47CB-B908-5F43D3928783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F60DF9-642C-40AF-A39E-D8B342CC3B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F60DF9-642C-40AF-A39E-D8B342CC3B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F60DF9-642C-40AF-A39E-D8B342CC3B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F60DF9-642C-40AF-A39E-D8B342CC3B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D05A81B7-E5EB-4D94-B85A-0EEAFECF8FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05A81B7-E5EB-4D94-B85A-0EEAFECF8FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05A81B7-E5EB-4D94-B85A-0EEAFECF8FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05A81B7-E5EB-4D94-B85A-0EEAFECF8FBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

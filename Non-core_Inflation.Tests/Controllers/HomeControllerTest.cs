@@ -13,6 +13,20 @@ namespace Non_core_Inflation.Tests.Controllers
     public class HomeControllerTest
     {
         [TestMethod]
+        public void GetSerie()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            JsonResult result = controller.GetSerie() as JsonResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+            //Assert.AreNotEqual(0, result);
+        }
+
+        [TestMethod]
         public void Index()
         {
             // Arrange

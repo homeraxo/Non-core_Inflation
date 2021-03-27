@@ -2,30 +2,45 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div ng-app="HomeApp" ng-controller="HomeCtrl" id="popupContainer" ng-cloak class="modal-demo">
+    <div class="spinner" data-ng-if="loading">
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <md-progress-circular md-mode="indeterminate" md-diameter="100" class="md-warn md-hue-3"> </md-progress-circular>
+    </div>
+    <br />
+
+    @*<div>
+        <br /><br /><br />
+        <form name="formTest" novalidate>
+            <label style="font:bold">Mensaje usuario:</label>
+            <input type="text" class="form-control text-center" placeholder="Mensaje" required ng-model="UserMessage" maxlength="20" />
+            <button class="btn btn-primary" ng-click="SendMessage()">Enviar</button>
+            <label style="color:blue">{{NotificationMessage}}</label>
+        </form>
+        <br />
+    </div>*@
+
+    <div>
+        <label style="font:bold">Inflación No subyacente&nbsp;</label>
+        <button class="btn btn-primary" ng-click="GetSerie()">Obtener Serie</button>        
+        <br />
+        <table class="table">
+            <thead>
+                <tr style="font-weight:bold;font-size:14px">
+                    <td>Fecha</td>
+                    <td>Inflación</td>
+                </tr>
+            </thead>
+            <tbody style="font-size:12px">
+                <tr ng-repeat="r in NonCoreInflation">
+                    <td>{{r.Date}}</td>
+                    <td>{{r.Data}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <label style="color:blue">{{NotificationMessage}}</label>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<script type="text/javascript" src="~/ClientApp/HomeController.js"></script>
+<script type="text/javascript" src="~/ClientApp/HomeService.js"></script>
